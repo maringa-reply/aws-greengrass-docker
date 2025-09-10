@@ -1,0 +1,17 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+
+version: '3.7'
+
+services:
+  greengrass:
+    init: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aws-iot-greengrass
+    image: x86_64/aws-iot-greengrass:2.5.4
+    environment:
+      - PROVISION=true
+      - AWS_ACCESS_KEY_ID=AKIARV6KNYYRZ33DFXGT
+      - AWS_SECRET_ACCESS_KEY=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
