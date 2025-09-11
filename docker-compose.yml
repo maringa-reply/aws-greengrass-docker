@@ -13,5 +13,5 @@ services:
     image: x86_64/aws-iot-greengrass:2.5.4
     environment:
       - PROVISION=true
-      - AWS_ACCESS_KEY_ID=AKIARV6KNYYRZ33DFXGT
-      - AWS_SECRET_ACCESS_KEY=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
+      - AWS_ACCESS_KEY_ID=""
+      - AWS_SECRET_ACCESS_KEY=""
